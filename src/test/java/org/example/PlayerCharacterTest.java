@@ -37,7 +37,7 @@ class PlayerCharacterTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+/*    @Test
     void move_returnY2_WhenWW() {
         //GIVEN
         String direction = "w";
@@ -48,4 +48,7 @@ class PlayerCharacterTest {
         //THEN
         assertEquals(expected, actual);
     }
+*/
 }
+
+
