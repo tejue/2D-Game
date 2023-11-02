@@ -27,7 +27,7 @@ class PlayerCharacterTest {
     }
 
     @Test
-    void move_returnY1_WhenW() {
+    void move_returnYPlus1_WhenW() {
         //GIVEN
         String direction = "w";
         int expected = 1;
@@ -38,7 +38,7 @@ class PlayerCharacterTest {
     }
 
 /*    @Test
-    void move_returnY2_WhenWW() {
+    void move_returnYPlus2_WhenWW() {
         //GIVEN
         String direction = "w";
         int expected = 2;
@@ -49,6 +49,39 @@ class PlayerCharacterTest {
         assertEquals(expected, actual);
     }
 */
+
+    @Test
+    void move_returnYMinus1_WhenS() {
+        //GIVEN
+        String direction = "s";
+        int expected = -1;
+        //WHEN
+        int actual = PlayerCharakter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void move_returnXPlus1_WhenD() {
+        //GIVEN
+        String direction = "d";
+        int expected = 1;
+        //WHEN
+        int actual = PlayerCharakter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void move_returnXMinus1_WhenA() {
+        //GIVEN
+        String direction = "a";
+        int expected = -1;
+        //WHEN
+        int actual = PlayerCharakter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
 }
 
 

@@ -20,6 +20,15 @@ public class PlayerCharakter {
         if (direction.equals("w")) {
             y++;
             return getY();
+        } else if (direction.equals("s")) {
+            y--;
+            return getY();
+        } else if (direction.equals("d")) {
+            x++;
+            return getX();
+        } else if (direction.equals("a")) {
+            x--;
+            return getX();
         }
         return 0;
 
