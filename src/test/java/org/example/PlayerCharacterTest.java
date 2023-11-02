@@ -25,4 +25,27 @@ class PlayerCharacterTest {
         //THEN
         assertEquals(expected, actual);
     }
+
+    @Test
+    void move_returnY1_WhenW() {
+        //GIVEN
+        String direction = "w";
+        int expected = 1;
+        //WHEN
+        int actual = PlayerCharakter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void move_returnY2_WhenWW() {
+        //GIVEN
+        String direction = "w";
+        int expected = 2;
+        //WHEN
+        int actual = PlayerCharakter.move(direction);
+        actual = PlayerCharakter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
 }
