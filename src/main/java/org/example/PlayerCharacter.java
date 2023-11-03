@@ -1,11 +1,9 @@
 package org.example;
 
-import java.util.Objects;
+public class PlayerCharacter {
 
-public class PlayerCharakter {
-
-    static int x = 0;
-    static int y = 0;
+     public static int x = 0;
+     public static int y = 0;
 
     public static int getX() {
         return x;
